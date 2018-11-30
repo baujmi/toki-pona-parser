@@ -467,7 +467,7 @@ pName =
         (do firstLetterOfName <- upper
             restOfName <- many alphaNum
             return (firstLetterOfName : restOfName)) <?>
-      "Name"
+      "Name (Uppercase letter followed by letters and numbers)"
 
 
 testParser :: Show a => Parser a -> String -> IO ()
